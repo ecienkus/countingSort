@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void countSort(vector<int>& vect){
+void countingSort(vector<int>& vect){
     //Finds the lowest value in the vector
     int max = *max_element(vect.begin(), vect.end());
     //Finds the highest value in the vector
@@ -47,7 +47,7 @@ void printArray(vector<int>& vect)
 
 int main(){
     vector<int> vect = { -5, 5, 1, 5, 2, 1, -3, 5};
-    countSort(vect);
+    countingSort(vect);
     printArray(vect);
 
     return 0;
